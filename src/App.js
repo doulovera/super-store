@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // Components
 import Nav from './components/Nav'
-import Home from './components/Home'
-import Deals from './components/Deals'
-import Cart from './components/Cart'
+import Home from './components/Home/Home'
+import Deals from './components/Deals/Deals'
+import Cart from './components/Cart/Cart'
 
 function App() {
   return (
