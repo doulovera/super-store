@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import '../../styles/Home.css'
+import SearchBar from './SearchBar';
+import ItemsGrid from './ItemsGrid';
 
 function Home() {
+
     return (
-        <div className="text-center">
-            This is the <strong>HOME</strong> page.
+        <div className="Home text-center">
+
+            <SearchBar />
+
+            <ItemsGrid showOnSale={false} />
+            
         </div>
     )
 }

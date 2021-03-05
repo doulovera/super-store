@@ -1,9 +1,10 @@
 import React from 'react'
+import ItemsGrid from '../Home/ItemsGrid';
 
 function Deals() {
     return (
         <div className="text-center">
-            This is the <strong>DEALS</strong> page.
+            <ItemsGrid showOnSale={true} />
         </div>
     )
 }
