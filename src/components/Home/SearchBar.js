@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 
 function Searchbar() {
     return (
-        <div className="bg-light search-bar my-5 mx-auto">
+    <div className="bg-light my-5 mx-auto" style={{width:'50%'}}>
             <div className="input-group">
                 <input type="search" className="form-control" placeholder="Search" />
                 <div className="input-group-append">
