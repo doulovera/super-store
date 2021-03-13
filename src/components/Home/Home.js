@@ -22,7 +22,7 @@ function Home() {
 
             <SearchBar />
 
-            { isLoaded ? '' : <h3>Loading...</h3> }
+            { !isLoaded && <h3>Loading...</h3> }
             <ItemsGrid items={items} />
             
         </div>
