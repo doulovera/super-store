@@ -8,13 +8,13 @@ function ItemCard({ item }) {
     return (
         <div className="col mb-4">
             <div className="card text-left">
-                <img src={item.imageUrl} className="card-img-top mx-auto" alt={item.name} style={{width:'auto', height: '10em'}} />
+                <img src={item.imageUrl} className="card-img-top mx-auto" alt={item.name} style={{width:'auto', maxWidth: '100%', height: '10em'}} />
                 <div className="card-body border-top">
                     <h5 className="card-title">{item.name}</h5>
-                    <StarsRating stars={item.avgRating} /> ({item.avgRating})
-                    <h6>$ {item.price} {item.isOnSale ? <span className="badge badge-pill badge-danger">On Sale</span> : ''}</h6>
+                    <StarsRating item={item} /> ({item.avgRating})
+                    <h6>${item.price} {item.isOnSale ? <span className="badge badge-pill badge-danger">On Sale</span> : ''}</h6>
                     <div className="text-center mt-4">
-                        <Link to={'/items/'+item._id} className="text-center btn btn-primary">View Item</Link>
+                        <Link to={'/items/'+item._id} className="text-center btn btn-warning">View Item</Link>
                     </div>
                 </div>
             </div>

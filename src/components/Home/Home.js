@@ -1,16 +1,29 @@
-import React from 'react';
-import '../../styles/Home.css'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import SearchBar from './SearchBar';
 import ItemsGrid from './ItemsGrid';
 
 function Home() {
+
+    const [isLoaded, setIsLoaded] = useState(false)
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        axios('https://gp-super-store-api.herokuapp.com/item/list')
+        .then(res => {
+            setItems(res.data.items);
+            setIsLoaded(true);
+        })
+        .catch(err => console.log(err))
+    }, [])
 
     return (
         <div className="Home text-center">
 
             <SearchBar />
 
-            <ItemsGrid showOnSale={false} />
+            { !isLoaded && <h3>Loading...</h3> }
+            <ItemsGrid items={items} />
             
         </div>
     )
