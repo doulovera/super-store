@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/StarsRating.css';
+import './StarsRating.css';
 
 function StarsRating({ item }) {
     

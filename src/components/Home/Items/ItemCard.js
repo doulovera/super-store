@@ -1,5 +1,5 @@
 import React from 'react'
-import StarsRating from '../StarsRating'
+import StarsRating from '../StarRating'
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 

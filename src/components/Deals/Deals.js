@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import SearchBar from '../Home/SearchBar';
-import ItemsGrid from '../Home/ItemsGrid';
+import ItemsGrid from '../Home/Items/ItemsGrid';
 
 function Deals() {
 

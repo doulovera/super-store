@@ -5,7 +5,7 @@ import Nav from './components/Nav'
 import Home from './components/Home/Home'
 import Deals from './components/Deals/Deals'
 import Cart from './components/Cart/Cart'
-import ItemInfo from './components/Home/ItemInfo'
+import ItemInfo from './components/Home/Items/ItemInfo'
 
 function App() {
   return (
